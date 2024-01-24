@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  text-align: left;
+  padding: 1em;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.bordered {
+  /*padding: 0.5em;*/
+  border: 2px solid blue;
+}
+
+fieldset {
+  padding: 0;
+}
+
+#imgs {
+  display: flex;
+  flex-direction: row;
+}
+
+#kbm {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe,
+.redborder {
+  border: 2px solid red;
+}
+
+.imgcont {
+  display: block;
+  text-align: center;
+}
