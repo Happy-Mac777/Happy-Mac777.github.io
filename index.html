@@ -28,6 +28,7 @@ body {
 <button onclick= "window.location.href = 'Minecraft.html'">Minecraft</button>
 <button onclick="window.location.href = 'home.html'">Computing News</button>
 <br>
+
   <br>
   <br>
 <input type="password" id="pin"/>
@@ -35,7 +36,12 @@ body {
 </div> 
   <br />
   <br />
-  
+  <br>
+  <br>
+  <br>
+  <div align="center">
+  <p style = "color: white";  >If you suddenly got redirected to this page please sign in above </p>
+  </div>
 
 
     <script>
@@ -53,7 +59,7 @@ body {
       sessionStorage.setItem("loggedIn", "false")
       function sign() {
         userinputtedpin = document.getElementById("pin").value
-        if (userinputtedpin.hashCode() == -1317335885)
+        if (userinputtedpin.hashCode() == -1317335885) {
           sessionStorage.setItem("loggedIn", "true")
           window.location.href = "homeplus.html"
       }
