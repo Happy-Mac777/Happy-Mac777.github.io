@@ -10,10 +10,11 @@
     }
     return hash;
   }
-  
+  while (true) {
   pin = prompt("Enter the pin to access Happy Mac Plus").hashCode()
-  if (pin == 3235910) {
+  if (pin == -1317335885) {
     sessionStorage.setItem("loggedIn", "true")
     window.location.href = "HappymacPlus.html"
-  }
+    break
+  }}
 </script>
