@@ -14,7 +14,7 @@ body {
   }
 
   100% {
-    0% 75%;
+    background-position: 0% 75%;
   }
 }
 
