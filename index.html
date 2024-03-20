@@ -20,18 +20,19 @@ body {
 }
   </style>
 <body>
+  <img src="favicon/android-chrome-512x512.png" width="50px"/>
   <h1 style="color:white">Happy Mac</h1>
 <br>
 <div align="center">            
 
 <button onclick="window.location.href = 'Bitlife.html'">Bitlife</button>
-<button onclick= "window.location.href = 'Minecraft.html'">Minecraft</button>
+<button onclick= "window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Minecraft</button>
 <button onclick="window.location.href = 'home.html'">Computing News</button>
 <br>
 
   <br>
   <br>
-<input type="password" id="pin"/>
+<input type="password" id="pin" onkeyup="sign()"/>
   <button onclick="sign()">SIGN IN</button>
 </div> 
   <br />
@@ -56,7 +57,7 @@ body {
         }
         return hash;
       }
-      sessionStorage.setItem("loggedIn", "false")
+      sessionStorage.setItem("loggedIn", "false");
       function sign() {
         userinputtedpin = document.getElementById("pin").value;
         if (userinputtedpin.hashCode() == -1317335885) {
