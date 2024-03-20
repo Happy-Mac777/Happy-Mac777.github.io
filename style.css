@@ -32,7 +32,7 @@ fieldset {
   flex-direction: column;
 }
 
-iframe,
+
 .redborder {
   border: 2px solid red;
 }
@@ -40,4 +40,8 @@ iframe,
 .imgcont {
   display: block;
   text-align: center;
+}
+
+iframe{
+  border:none;
 }

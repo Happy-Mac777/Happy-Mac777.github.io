@@ -26,13 +26,14 @@ body {
 <div align="center">            
 
 <button onclick="window.location.href = 'Bitlife.html'">Bitlife</button>
-<button onclick= "window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Minecraft</button>
 <button onclick="window.location.href = 'home.html'">Computing News</button>
+<button onclick="window.location.href = 'vid.html'">Videos</button>'"
 <br>
 
   <br>
   <br>
-<input type="password" id="pin" onkeyup="sign()"/>
+  <input type="checkbox" id="auto"/>
+  <input type="password" id="pin" onkeyup="signauto()"/>
   <button onclick="sign()">SIGN IN</button>
 </div> 
   <br />
@@ -45,27 +46,7 @@ body {
   </div>
 
 
-    <script>
-      String.prototype.hashCode = function() {
-        var hash = 0,
-          i, chr;
-        if (this.length === 0) return hash;
-        for (i = 0; i < this.length; i++) {
-          chr = this.charCodeAt(i);
-          hash = ((hash << 5) - hash) + chr;
-          hash |= 0; // Convert to 32bit integer
-        }
-        return hash;
-      }
-      sessionStorage.setItem("loggedIn", "false");
-      function sign() {
-        userinputtedpin = document.getElementById("pin").value;
-        if (userinputtedpin.hashCode() == -1317335885) {
-          sessionStorage.setItem("loggedIn", "true");
-          window.location.href = "homeplus.html";
-        }
-      }
-    </script>
+    <script src="login.js"></script>
 </body>
 
 </html>
