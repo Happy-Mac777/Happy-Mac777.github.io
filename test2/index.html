@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      html {
+        margin:0;
+        padding:0;
+        height: 100vh;
+        width: 100vw;
+      }
+      body {
+        margin: 0;
+        background-size: 500%, 500%;
+        animation: gradientanimation 5s infinite;
+      }
+
+      @keyframes gradientanimation {
+        0% {
+          background-position: 0% 75%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 75%;
+        }
+      }
+    </style>
+  </head>
+  <body id="body">
+    <input type="range" min="1" max="255" id="red1" onchange="update()"/>
+    <input type="range" min="1" max="255" id="green1" onchange="update()"/>
+    <input type="range" min="1" max="255" id="blue1" onchange="update()"/>
+    <br/>
+    <br/>
+    <input type="range" min="1" max="255" id="red2" onchange="update()"/>
+    <input type="range" min="1" max="255" id="green2" onchange="update()"/>
+    <input type="range" min="1" max="255" id="blue2" onchange="update()"/>
+    <script src="../test2/script.js"></script>
+  </body>
+</html>
