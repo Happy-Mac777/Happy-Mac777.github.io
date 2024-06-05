@@ -1,4 +1,10 @@
 body {
+  text-align: left;
+  padding: 1em;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body {
   background: linear-gradient(to bottom right,#01EF9F, #28EF01,#01EFDF,#015CEF,#1801EF,#EF01B7);
   background-size: 500%, 500%;
   animation: gradientanimation 5s infinite;
