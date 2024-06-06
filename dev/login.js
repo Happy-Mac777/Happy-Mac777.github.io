@@ -12,7 +12,7 @@ String.prototype.hashCode = function() {
 sessionStorage.setItem("loggedIn", "false");
 function sign() {
   userinputtedpin = document.getElementById("pin").value;
-  if (userinputtedpin.hashCode() == 1485651290) {
+  if (userinputtedpin.hashCode() == -49603235) {
     sessionStorage.setItem("loggedIn", "true");
     window.location.href = "devpage.html";
   }
