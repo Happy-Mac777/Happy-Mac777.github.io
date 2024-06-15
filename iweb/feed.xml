@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:94FA0EE0-2D95-4B92-AA9E-FAA7A98712E1</id>
+ <title>Page list Atom feed</title>
+ <updated>2024-06-15T20:49:37+01:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:3A37A160-2FB1-4CCA-AEB1-005BE6A39C18</id>
+  <title>Home</title>
+  <title xmlns="urn:iweb:">Home</title>
+  <in-navbar xmlns="urn:iweb:">3A37A160-2FB1-4CCA-AEB1-005BE6A39C18</in-navbar>
+  <link rel="alternate" href="Home.html"/>
+  <updated>2024-06-15T20:49:37.001+01:00</updated>
+  <content>Home</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:99B43F17-AF74-45A9-AC51-6FEB2D71747F</id>
+  <title>Bitlife</title>
+  <title xmlns="urn:iweb:">Bitlife</title>
+  <in-navbar xmlns="urn:iweb:">99B43F17-AF74-45A9-AC51-6FEB2D71747F</in-navbar>
+  <link rel="alternate" href="Bitlife.html"/>
+  <updated>2024-06-15T20:49:37.002+01:00</updated>
+  <content>Bitlife</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:B4943A34-F4C4-4522-B74A-A19E7F731AEF</id>
+  <title>Videos</title>
+  <title xmlns="urn:iweb:">Videos</title>
+  <in-navbar xmlns="urn:iweb:">B4943A34-F4C4-4522-B74A-A19E7F731AEF</in-navbar>
+  <link rel="alternate" href="Videos.html"/>
+  <updated>2024-06-15T20:49:37.003+01:00</updated>
+  <content>Videos</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:677C8343-09DD-4244-A415-74238F051D11</id>
+  <title>Dell</title>
+  <title xmlns="urn:iweb:">Dell</title>
+  <in-navbar xmlns="urn:iweb:">677C8343-09DD-4244-A415-74238F051D11</in-navbar>
+  <link rel="alternate" href="Dell.html"/>
+  <updated>2024-06-15T20:49:37.004+01:00</updated>
+  <content>Dell</content>
+ </entry>
+</feed>
