@@ -15,7 +15,12 @@ function sign() {
   if (userinputtedpin.hashCode() == -1317335885) {
     sessionStorage.setItem("loggedIn", "true");
     window.location.href = "plus";
-  }
+  } else if (userinputtedpin.hashCode() == -1374130968) {
+    sessionStorage.setItem("loggedIn", "true");
+    window.location.href = "dev";
+  }else if (userinputtedpin.hashCode() == -114985) {
+    window.location.href = "tnc.html";
+  
 }
 function signauto() {
   if(document.getElementById("auto").checked) {
