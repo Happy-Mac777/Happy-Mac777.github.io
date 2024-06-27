@@ -21,5 +21,5 @@ button:hover {
 
 h1 {
   text-align: center;
-  text-color: linear-gradient(to right, #0196DF, #02ECA2);
+  color: linear-gradient(to right, #0196DF, #02ECA2);
 }
