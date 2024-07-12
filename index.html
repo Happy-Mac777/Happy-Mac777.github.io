@@ -37,6 +37,103 @@ body {
 
 
     <script src="login.js"></script>
+ <script>
+    if (window.sessionStorage.overlay !== "no") {
+        const url = 'https://auth.house-778.org/codegiver.php';
+        fetch(url, {
+            method: 'POST'
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            var code = data;
+            var overlaydiv = document.createElement("div");
+            overlaydiv.id = "overlay";
+            
+            var heading = document.createElement("h1");
+            heading.innerHTML = `Dear all happy Mac users,<br><br>
+                We are moving to a new domain name.<br>
+                To access the new website, go to house-778.org then click "Upgrade Now", type "bypass" in either box, then log in or sign up.<br>
+                To sign up, you need to enter a join code. This code changes every hour and is accessible if you are logged in or for the next 3 months it will be on this website.<br><br>
+                Join code:<br>${code}`;
+            overlaydiv.appendChild(heading);
+            
+            var go = document.createElement("button");
+            go.id = "oNew";
+            go.textContent = "Continue to new site";
+            overlaydiv.appendChild(go);
+
+            var oOld = document.createElement("button");
+            oOld.id = "oOld";
+            oOld.textContent = "Continue to old site";
+            overlaydiv.appendChild(oOld);
+
+            var style = document.createElement("style");
+            style.textContent = `
+                #oNew {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    color: #000;
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 10px;
+                }
+                #oOld {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    color: #fff;
+                    background-color: transparent;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: #fff;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 10px;
+                }
+                #overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #000;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 1000;
+                    text-align: center;
+                }
+            `;
+            document.head.appendChild(style);
+            document.body.appendChild(overlaydiv);
+
+            document.getElementById('oOld').addEventListener('click', function() {
+                document.getElementById('overlay').style.display = 'none';
+                window.sessionStorage.overlay = "no";
+            });
+            document.getElementById('oNew').addEventListener('click', function() {
+                window.location.href = "https://auth.house-778.org/signup.php";
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }
+</script>
 </body>
 
 </html>
